@@ -2,3 +2,12 @@
 # нужно ввести с клавиатуры. Формула для получения n-го члена прогрессии: an = a1 + (n-1) * d. Каждое число вводится с
 # новой строки.
 
+a_0 = int(input('a0= '))
+d = int(input('d= '))
+n = int(input('n= '))
+list_a = list()
+
+for i in range(n):
+    list_a.append(a_0 + i * d)
+
+print(*list_a)
